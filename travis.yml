@@ -1,0 +1,21 @@
+language: python        # Specify the language your project is written in
+python:
+  - "3.8"               # The version of Python you want to use
+  - "3.9"               # You can add multiple versions to test against different Python versions
+
+# Commands to install dependencies
+install:
+  - pip install -r requirements.txt
+
+# Commands to run the tests
+script:
+  - pytest              # Replace 'pytest' with your preferred test runner
+
+# Optional: Notifications settings
+notifications:
+  email:                # If you want to be notified by email when builds succeed/fail
+    recipients:
+      - your-email@example.com
+    on_success: always  # Send an email on successful builds
+    on_failure: always  # Send an email on failed builds
+
