@@ -1,21 +1,33 @@
-language: python        # Specify the language your project is written in
-python:
-  - "3.8"               # The version of Python you want to use
-  - "3.9"               # You can add multiple versions to test against different Python versions
+language: python  # Specifies Python as the language
 
-# Commands to install dependencies
+python:
+  - "3.8"  # The version of Python you want to test against
+
+# Install dependencies directly in the .travis.yml file
 install:
-  - pip install -r requirements.txt
+  - pip install pytest  # Installs pytest directly
 
 # Commands to run the tests
 script:
-  - pytest              # Replace 'pytest' with your preferred test runner
+  - pytest  # Runs pytest to execute the tests
 
-# Optional: Notifications settings
-notifications:
-  email:                # If you want to be notified by email when builds succeed/fail
-    recipients:
-      - your-email@example.com
-    on_success: always  # Send an email on successful builds
-    on_failure: always  # Send an email on failed builds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
