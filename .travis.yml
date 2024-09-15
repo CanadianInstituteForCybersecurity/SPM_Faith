@@ -1,0 +1,11 @@
+language: python  # Specifies Python as the language
+
+python:
+  - "3.8"  # The version of Python you want to test against
+
+install:
+  - pip install pytest  # Install pytest directly
+
+script:
+  - pytest  # Run pytest to execute the tests
+
