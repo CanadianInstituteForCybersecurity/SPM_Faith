@@ -30,6 +30,7 @@ def cumbersome_prime_task(limit):
 
     return result_sum
 
+# About to set a limit
 # Set a limit for prime search
 limit = 100
 result = cumbersome_prime_task(limit)
